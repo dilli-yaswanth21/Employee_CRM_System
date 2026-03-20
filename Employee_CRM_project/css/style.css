@@ -1,0 +1,114 @@
+/* 🎨 Theme Variables */
+:root{
+    --sage: #C6C296;
+    --dark: #2D4B48;
+    --green: #5C8966;
+    --sheen: #7BBA97;
+    --cyan: #669294;
+    --white: #ffffff;
+}
+
+/* Base */
+body{
+    background-color: var(--sage);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar{
+    background-color: var(--dark) !important;
+}
+
+.navbar-brand,
+.nav-link{
+    color: var(--white) !important;
+}
+
+.nav-link:hover{
+    color: var(--sheen) !important;
+}
+
+/* Hamburger */
+.navbar-toggler{
+    border-color: var(--white);
+}
+.navbar-toggler-icon{
+    filter: invert(1);
+}
+
+/* Cards */
+.card{
+    background-color: var(--white);
+    border-radius: 15px;
+    border: none;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card h5{
+    color: var(--dark);
+}
+.Profile_Hover{
+    background-color: var(--white);
+    border-radius: 15px;
+    border: none;
+    transition: 0.3s;
+}
+.Profile_Hover:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Progress */
+.progress{
+    height: 20px;
+    border-radius: 10px;
+    background-color: #d41a1a;
+}
+
+.progress-bar{
+    background-color: #5C8966 !important; /* your green */
+    color: white;
+    font-weight: bold;
+}
+
+/* Breadcrumb */
+.breadcrumb a{
+    color: var(--dark);
+}
+
+.breadcrumb-item.active{
+    color: var(--green);
+}
+
+/* Table */
+table{
+    background-color: var(--white);
+}
+
+/* Buttons */
+.btn-primary{
+    background-color: var(--green);
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: var(--dark);
+}
+
+/* Footer */
+footer{
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+/* Responsive */
+@media (max-width:768px){
+    h5{
+        font-size: 18px;
+    }
+}

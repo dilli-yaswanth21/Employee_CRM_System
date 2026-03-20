@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport">
+<title>Employees</title>
+<link rel="icon" href="assets/SSLogo.png" type="image/png">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold">Sonic Solutions CRM</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="employees.html">Employees</a></li>
+        <li class="nav-item"><a class="nav-link active" href="assessment.html">Assessment</a></li>
+        <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<div class="container mt-3"><img width="20" height="20" src="https://img.icons8.com/windows/32/conference-foreground-selected.png" alt="conference-foreground-selected"/>
+    Home > Employees</div>
+
+<div class="container mt-4">
+
+  <div class="card p-3 shadow">
+    <h4 class="mb-3">Sonic Solutions Employee List</h4>
+
+    <div class="table-responsive">
+      <table class="table table-hover align-middle">
+
+        <thead class="table-dark">
+          <tr>
+            <th>S.no</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th>Clients</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="employeeTable">
+
+<!-- Administration -->
+<tr>
+  <td>1</td>
+  <td>101</td>
+  <td><strong>Gajala</strong></td>
+  <td>Administration</td>
+  <td><span class="badge bg-danger">CEO</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>20</td>
+</tr>
+
+<tr>
+  <td>2</td>
+  <td>102</td>
+  <td><strong>Yogi Adityanadh</strong></td>
+  <td>Administration</td>
+  <td><span class="badge bg-dark">Co-CEO</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>10</td>
+</tr>
+
+<!-- Sales -->
+<tr>
+  <td>3</td>
+  <td>201</td>
+  <td><strong>Neelambari</strong></td>
+  <td>Sales</td>
+  <td><span class="badge bg-success">Manager</span></td>
+  <td><span class="badge bg-danger">Inactive</span></td>
+  <td>8</td>
+</tr>
+
+<tr>
+  <td>4</td>
+  <td>202</td>
+  <td><strong>Rohul Nandhi</strong></td>
+  <td>Sales</td>
+  <td><span class="badge bg-primary">Regional Manager</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>6</td>
+</tr>
+
+<tr>
+  <td>5</td>
+  <td>203</td>
+  <td><strong>Sri Reddy</strong></td>
+  <td>Sales</td>
+  <td><span class="badge bg-info">Area Sales Manager</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>6</td>
+</tr>
+
+<tr>
+  <td>6</td>
+  <td>204</td>
+  <td><strong>Rohul Nandhi</strong></td>
+  <td>Sales</td>
+  <td><span class="badge bg-secondary">Sales Executive</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>5</td>
+</tr>
+
+<tr>
+  <td>7</td>
+  <td>205</td>
+  <td><strong>Rohul Nandhi</strong></td>
+  <td>Sales</td>
+  <td><span class="badge bg-warning text-dark">Sales Head</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>5</td>
+</tr>
+
+<tr>
+  <td>8</td>
+  <td>206</td>
+  <td><strong>Deepak Yadav</strong></td>
+  <td>Sales</td>
+  <td><span class="badge bg-secondary">Sales Executive</span></td>
+  <td><span class="badge bg-danger">Inactive</span></td>
+  <td>1</td>
+</tr>
+
+<!-- Marketing -->
+<tr>
+  <td>9</td>
+  <td>301</td>
+  <td><strong>Alison Burgers</strong></td>
+  <td>Marketing</td>
+  <td><span class="badge bg-primary">Marketing Executive</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>5</td>
+</tr>
+
+<tr>
+  <td>10</td>
+  <td>302</td>
+  <td><strong>Roshan Babu</strong></td>
+  <td>Marketing</td>
+  <td><span class="badge bg-warning text-dark">SEO Specialist</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>5</td>
+</tr>
+
+<tr>
+  <td>11</td>
+  <td>303</td>
+  <td><strong>Peter Parker</strong></td>
+  <td>Marketing</td>
+  <td><span class="badge bg-info">Content Strategist</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>5</td>
+</tr>
+
+<tr>
+  <td>12</td>
+  <td>304</td>
+  <td><strong>Anuskha Shetty</strong></td>
+  <td>Marketing</td>
+  <td><span class="badge bg-success">Digital Marketing Manager</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>5</td>
+</tr>
+
+<tr>
+  <td>13</td>
+  <td>305</td>
+  <td><strong>Naturam</strong></td>
+  <td>Marketing</td>
+  <td><span class="badge bg-dark">Brand Manager</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>5</td>
+</tr>
+
+<tr>
+  <td>14</td>
+  <td>306</td>
+  <td><strong>Rohit Das</strong></td>
+  <td>Marketing</td>
+  <td><span class="badge bg-primary">SEO Specialist</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>3</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>307</td>
+  <td><strong>Neha Jain</strong></td>
+  <td>Marketing</td>
+  <td><span class="badge bg-info">Content Strategist</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>3</td>
+</tr>
+
+<!-- IT -->
+<tr>
+  <td>16</td>
+  <td>401</td>
+  <td><strong>Nambi Narayan</strong></td>
+  <td>IT</td>
+  <td><span class="badge bg-info">Frontend Developer</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>5</td>
+</tr>
+
+<tr>
+  <td>17</td>
+  <td>402</td>
+  <td><strong>Avanthika</strong></td>
+  <td>IT</td>
+  <td><span class="badge bg-primary">Backend Developer</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>5</td>
+</tr>
+
+<tr>
+  <td>18</td>
+  <td>403</td>
+  <td><strong>Sarojini Naidu</strong></td>
+  <td>IT</td>
+  <td><span class="badge bg-success">Software Engineer</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>5</td>
+</tr>
+
+<tr>
+  <td>19</td>
+  <td>404</td>
+  <td><strong>Sarojini Naidu</strong></td>
+  <td>IT</td>
+  <td><span class="badge bg-warning text-dark">QA Tester</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>5</td>
+</tr>
+
+<tr>
+  <td>20</td>
+  <td>405</td>
+  <td><strong>Devasena</strong></td>
+  <td>IT</td>
+  <td><span class="badge bg-danger">Tech Lead</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>5</td>
+</tr>
+
+<tr>
+  <td>21</td>
+  <td>406</td>
+  <td><strong>Aman Khan</strong></td>
+  <td>IT</td>
+  <td><span class="badge bg-success">Software Engineer</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>2</td>
+</tr>
+
+<!-- HR -->
+<tr>
+  <td>22</td>
+  <td>501</td>
+  <td><strong>Shivagami</strong></td>
+  <td>Human Resource</td>
+  <td><span class="badge bg-primary">HR Executive</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>5</td>
+</tr>
+
+<tr>
+  <td>23</td>
+  <td>502</td>
+  <td><strong>Rajeev Kanakala</strong></td>
+  <td>Human Resource</td>
+  <td><span class="badge bg-success">HR Manager</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>5</td>
+</tr>
+
+<tr>
+  <td>24</td>
+  <td>503</td>
+  <td><strong>Suma Kanakala</strong></td>
+  <td>Human Resource</td>
+  <td><span class="badge bg-secondary">Recruiter</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>5</td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>504</td>
+  <td><strong>Ritu Sharma</strong></td>
+  <td>Human Resource</td>
+  <td><span class="badge bg-warning text-dark">Talent Acquisition Specialist</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>2</td>
+</tr>
+
+<tr>
+  <td>26</td>
+  <td>505</td>
+  <td><strong>Vikas Joshi</strong></td>
+  <td>Human Resource</td>
+  <td><span class="badge bg-primary">Recruiter</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>1</td>
+</tr>
+<!-- Customer Support -->
+<tr>
+  <td>27</td>
+  <td>601</td>
+  <td><strong>Arjun Mehta</strong></td>
+  <td>Customer Support</td>
+  <td><span class="badge bg-secondary">Support Executive</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>2</td>
+</tr>
+
+<tr>
+  <td>28</td>
+  <td>602</td>
+  <td><strong>Sneha Kapoor</strong></td>
+  <td>Customer Support</td>
+  <td><span class="badge bg-primary">Customer Success Manager</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>3</td>
+</tr>
+
+<tr>
+  <td>29</td>
+  <td>603</td>
+  <td><strong>Rahul Verma</strong></td>
+  <td>Customer Support</td>
+  <td><span class="badge bg-info">Technical Support Engineer</span></td>
+  <td><span class="badge bg-danger">Inactive</span></td>
+  <td>1</td>
+</tr>
+
+<tr>
+  <td>30</td>
+  <td>604</td>
+  <td><strong>Pooja Sharma</strong></td>
+  <td>Customer Support</td>
+  <td><span class="badge bg-warning text-dark">Support Executive</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>2</td>
+</tr>
+
+<!-- Operations -->
+<tr>
+  <td>31</td>
+  <td>701</td>
+  <td><strong>Kiran Reddy</strong></td>
+  <td>Operations</td>
+  <td><span class="badge bg-primary">Operations Executive</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>4</td>
+</tr>
+
+<tr>
+  <td>32</td>
+  <td>702</td>
+  <td><strong>Manoj Kumar</strong></td>
+  <td>Operations</td>
+  <td><span class="badge bg-success">Operations Manager</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>5</td>
+</tr>
+
+<tr>
+  <td>33</td>
+  <td>703</td>
+  <td><strong>Divya Nair</strong></td>
+  <td>Operations</td>
+  <td><span class="badge bg-info">Project Coordinator</span></td>
+  <td><span class="badge bg-danger">Inactive</span></td>
+  <td>1</td>
+</tr>
+
+<tr>
+  <td>34</td>
+  <td>704</td>
+  <td><strong>Rakesh Singh</strong></td>
+  <td>Operations</td>
+  <td><span class="badge bg-secondary">Operations Executive</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>3</td>
+</tr>
+
+<tr>
+  <td>35</td>
+  <td>705</td>
+  <td><strong>Varun Shetty</strong></td>
+  <td>Operations</td>
+  <td><span class="badge bg-success">Operations Manager</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>4</td>
+</tr>
+
+<!-- Finance -->
+<tr>
+  <td>36</td>
+  <td>801</td>
+  <td><strong>Anil Gupta</strong></td>
+  <td>Finance</td>
+  <td><span class="badge bg-primary">Accountant</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>2</td>
+</tr>
+
+<tr>
+  <td>37</td>
+  <td>802</td>
+  <td><strong>Meena Iyer</strong></td>
+  <td>Finance</td>
+  <td><span class="badge bg-info">Financial Analyst</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>2</td>
+</tr>
+
+<tr>
+  <td>38</td>
+  <td>803</td>
+  <td><strong>Suresh Patel</strong></td>
+  <td>Finance</td>
+  <td><span class="badge bg-success">Finance Manager</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>4</td>
+</tr>
+
+<tr>
+  <td>39</td>
+  <td>804</td>
+  <td><strong>Kavya Rao</strong></td>
+  <td>Finance</td>
+  <td><span class="badge bg-dark">Auditor</span></td>
+  <td><span class="badge bg-danger">Inactive</span></td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>805</td>
+  <td><strong>Priya Menon</strong></td>
+  <td>Finance</td>
+  <td><span class="badge bg-primary">Financial Analyst</span></td>
+  <td><span class="badge bg-success">Active</span></td>
+  <td>2</td>
+</tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>
+<script src="js/employees.js"></script>
+<footer class="text-center mt-5 p-3">Employee CRM System © SonicSolutions</footer>
+
+</body>
+</html>
